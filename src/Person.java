@@ -34,6 +34,12 @@ public class Person {
         }
         return dateOfBirth;
     }
+
+    @Override
+    public String toString() {
+        SimpleDateFormat format = new SimpleDateFormat("dd MM yyyy");
+        return  name +" "+ format.format(dateOfBirth);
+    }
 }
 
 
